@@ -16,14 +16,14 @@ inc2(obj);
 console.dir(obj);
 
 const array = [true, 'Yuuki', 'Aqua', 44.5, 'world', 1, 'generation', 18, 17, 20, false, false]
-const collection = { number: 0, string: 0, boolean: 0 };
+const collection = {};
 
 for (const item of array) {
     const type = typeof item;
-    if (collection.hasOwnProperty(type)){
-    collection[type]++;
+    if (!collection[type]) {
+        collection[type] = 0;
     }
-   
+    collection[type]++;
 }
 
 console.dir(collection);
