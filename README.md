@@ -1,3 +1,3 @@
 # PF-Labs
 
-This is just labs for universtity 
+Those iare just labs for PF 
